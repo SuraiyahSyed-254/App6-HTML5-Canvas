@@ -17,7 +17,7 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-Incorporate a canvas into code and be able to draw on it.
+Incorporate a canvas into code and be able to draw on it (via buttons).
  
 Known Issues:
 Facing issues with incorporating the drawing element in interaction with the canvas.
@@ -43,12 +43,14 @@ var canvas = document.getElementById("myCanvas");
 var context = canvas.getContext("2d");	
 	
 function drawRectangle(){
+ context.fillRect(50, 25, 150, 100);
 }
 function drawName(){
 }
 function loadImage(){
 }
 function clearCanvas(){
+ canvas.width = canvas.width;
 }
 </script>
 
