@@ -93,25 +93,31 @@ alert("This file last modified " + docMod); // generates alert box with time sta
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 
 var c = document.getElementById("myCanvas");
+// This variable is retrieves the connection between function and the canvas element in the body.
 var ctx = c.getContext("2d");	
+// This variable is the reason that things are being displayed. The 2d string is a must for the context variable so that fillStyle, fillRect, etc. will generate.
 	
 function drawRectangle(){
  ctx.fillStyle = "black";
  ctx.fillRect(50, 25, 150, 100);
 }
+//This function generates a rectange with the given dimensions and fills the color with black on the canvas.
 	
 function drawName(){
  ctx.fillText("Suraiyah", 50, 200);
 }
+//This writes my name on the canvas.
 	
 function loadImage(){
  var img = document.getElementById("picture");
   ctx.drawImage(img,5,5);
 }
+//This loads the image that I included in the body onto the canvas using it's image id.
 	
 function clearCanvas(){
  c.width = c.width;
 }
+//This will clear all elements displayed on the canvas by setting canvas width equal to each other.
 	
 </script>
 	
