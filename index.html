@@ -52,6 +52,8 @@ function drawName(){
 }
 	
 function loadImage(){
+ var img = document.getElementById("picture");
+  ctx.drawImage(img,10,10);
 }
 	
 function clearCanvas(){
@@ -91,7 +93,9 @@ function clearCanvas(){
 </div>
 	
 <div id="content" class="w3-container">
-	<canvas id="myCanvas" width="200" height="100"></canvas>
+	<br>
+	<canvas id="myCanvas" width="400" height="200"></canvas>
+	<img id="picture" src="https://s19528.pcdn.co/wp-content/uploads/2021/04/DIY-Diagnostics-1024x512.jpg" alt="DIY Diagnostics" width="220" height="277">
 	
 	<br>
 	<button onclick="drawRectangle()">Draw Rectangle</button>
