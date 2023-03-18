@@ -40,15 +40,15 @@ alert("This file last modified " + docMod); // generates alert box with time sta
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 
 var canvas = document.getElementById("myCanvas");
-var contextt = canvas.getContext("2d");	
+var context = canvas.getContext("2d");	
 	
 function drawRectangle(){
- contextt.fillStyle = "black";
- contextt.fillRect(50, 25, 150, 100);
+ context.fillStyle = "black";
+ context.fillRect(50, 25, 150, 100);
 }
 	
 function drawName(){
- contextt.fillText("Suraiyah", 50, 200);
+ context.fillText("Suraiyah", 50, 200);
 }
 	
 function loadImage(){
@@ -104,6 +104,7 @@ function clearCanvas(){
 	<button onclick="drawName()">Draw Name</button>
 	<button onclick="loadImage()">Load Image</button>
 	<button onclick="clearCanvas()">Clear Canvas</button>
+	</div>
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
 	<p>DIY!</p>
